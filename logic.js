@@ -3,10 +3,10 @@ class Game{
     difficulty;
     cols=3;
     rows=3;
-    count;//cols*rows
-    blocks;//the html elements with className="puzzle_block"
+    count;
+    blocks;
     emptyBlockCoords=[2,2];
-    indexes=[];//keeps track of the order of the blocks
+    indexes=[];
 
     constructor(difficultyLevel=1){
         this.difficulty=GameDifficulty[difficultyLevel-1];
