@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIDE PUZZLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>SLIDE PUZZLE</h1></header>
+    <div id="puzzle_container">
+        <div class="puzzle_block">1</div>
+        <div class="puzzle_block">2</div>
+        <div class="puzzle_block">3</div>
+        <div class="puzzle_block">4</div>
+        <div class="puzzle_block">5</div>
+        <div class="puzzle_block">6</div>
+        <div class="puzzle_block">7</div>
+        <div class="puzzle_block">8</div>
+    </div>
+    <div id="difficulty_container">
+        <div class="difficulty_button active">EASY</div>
+        <div class="difficulty_button">MEDIUM</div>
+        <div class="difficulty_button">HARD</div>
+        <div id="instruction_button" class="difficulty_button">INSTRUCTIONS</div>
+    </div>
+    
+    <div id="instruction-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-instructions" class="close">&times;</button>
+            <h2>Instructions</h2>
+            <div class="instruction-section">
+                <ul>
+                    <li>To solve the sliding puzzle, arrange the numbered blocks in numerical order from left to right, top to bottom.</li>
+                    <li>Click on a block adjacent to the empty space to move it into the empty space.</li>
+                    <li>Continue moving blocks until all blocks are in the correct numerical order.</li>
+                    <li>The puzzle is considered solved when all blocks are in the correct order.</li>
+                </ul>
+            </div>
+            <div class="instruction-section">
+                <h3>How to Play:</h3>
+                <ul>
+                    <li>Click on the "EASY", "MEDIUM", or "HARD" difficulty button to choose the level of difficulty.</li>
+                    <li>Start by clicking on the blocks adjacent to the empty space to move them and solve the puzzle.</li>
+                    <li>Use logical thinking and strategic moves to rearrange the blocks and complete the puzzle.</li>
+                </ul>
+            </div>
+            <div class="instruction-section">
+                <h3>Tips:</h3>
+                <ul>
+                    <li>Start by moving blocks around the empty space to create pathways for other blocks.</li>
+                    <li>Plan your moves ahead to avoid getting stuck.</li>
+                    <li>Practice patience and persistence to solve the puzzle efficiently.</li>
+                </ul>
+            </div>
+            <div class="instruction-section">
+                <h3>Have Fun!</h3>
+                <ul>
+                    <li>Enjoy the challenge of solving the sliding puzzle and improving your problem-solving skills.</li>
+                    <li>Don't hesitate to reset the puzzle or change the difficulty level if needed.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="congratulation-modal" class="modal">
+        <div class="modal-content">
+          <h2>Congratulations!</h2>
+          <p>You've solved the puzzle!</p>
+          
+        </div>
+    </div>
+    <div id="credits">
+        <p>Credits:</p>
+        <ul>
+            <li>Name:D.Sreekar Reddy</li>
+            <li>Reg_No:22BCE0952</li>
+        </ul>
+    </div>
+    
+
+    <script src="logic.js"></script>
+
+</body>
+</html>
